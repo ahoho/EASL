@@ -114,14 +114,6 @@
             var sliderDiv = document.getElementById("myRange3");
             sliderDiv.innerHTML = slideAmount;
         }
-        function updateSlider4(slideAmount) {
-            var sliderDiv = document.getElementById("myRange4");
-            sliderDiv.innerHTML = slideAmount;
-        }
-        function updateSlider5(slideAmount) {
-            var sliderDiv = document.getElementById("myRange5");
-            sliderDiv.innerHTML = slideAmount;
-        }
 
     var utf8ByteArrayToString = function(bytes) {
       var out = [], pos = 0, c = 0;
@@ -182,7 +174,7 @@
                     Welcome! Thank you for participating in this task. The purpose of this HIT is to score how each document expresses political spectrum.
                     Please read the instructions carefully.</p>
 
-                <p class="instr">You will be presented 5 documents. </p>
+                <p class="instr">You will be presented 3 documents. </p>
                 <p class="instr">You are to score each document according to how it expresses political spectrum.</p>
                 <p class="instr">The score is between 0 (conservative / Republican belief) and 100 (liberal / Democrat belief), and 50 is neutral.</p>
 
@@ -242,32 +234,6 @@
                         </div>
                     </div>
                     <hr/>
-                    <div class="sentence-wrapper">
-                        <p class="sentence"><strong>Document #4: </strong>${sent4}</p>
-                        <a href="javaScript:;" class="lines-expand">Expand / collapse. </a>
-                        <div class="slidecontainer" align="center">
-                            <p><strong>Score: <span id="myRange4">50</span></strong></p>
-                            <strong class="red">Conservative / Republican</strong>
-                            <input type="range" min="0" max="100" value="50" class="slider" id="slide4" name="range4" oninput="updateSlider4(this.value);">
-                            <strong class="blue">Liberal / Democrat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div class="sentence-wrapper">
-                        <p class="sentence"><strong>Document #5: </strong>${sent5}</p>
-                        <a href="javaScript:;" class="lines-expand">Expand / collapse. </a>
-                        <div class="slidecontainer" align="center">
-                            <p><strong>Score: <span id="myRange5">50</span></strong></p>
-                            <strong class="red">Conservative / Republican</strong>
-                            <input type="range" min="0" max="100" value="50" class="slider" id="slide5" name="range5" oninput="updateSlider5(this.value);">
-                            <strong class="blue">Liberal / Democrat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                        </div>
-                    </div>
-
-                    <hr />
-                    <p><span style="font-size: 15px;">Comments and feedback (This is optional. Please leave a comment if you have any questions, find issues, etc.)</span></p>
-                    <span style="font-size: 14px;"><textarea class="form-control" cols="120" name="Comments" rows="5"></textarea></span>
-
 
                 </fieldset>
             </section>
@@ -278,33 +244,21 @@
             ${id1}
             ${id2}
             ${id3}
-            ${id4}
-            ${id5}
             ${sent1}
             ${sent2}
             ${sent3}
-            ${sent4}
-            ${sent5}
             ${alpha1}
             ${alpha2}
             ${alpha3}
-            ${alpha4}
-            ${alpha5}
             ${beta1}
             ${beta2}
             ${beta3}
-            ${beta4}
-            ${beta5}
             ${mode1}
             ${mode2}
             ${mode3}
-            ${mode4}
-            ${mode5}
             ${var1}
             ${var2}
             ${var3}
-            ${var4}
-            ${var5}
         </span></p>
 </section>
 
