@@ -161,8 +161,8 @@ class EASL:
         csvReader = csv.DictReader(open(observe_path, 'r'))
         for row in csvReader:
             for _i in range(1, self.params["param_items"]+1):
-                id_i = row["Input.id{}".format(_i)]
-                s_i = float(row["Answer.range{}".format(_i)])/100.
+                id_i = row["id{}".format(_i)]
+                s_i = float(row["range{}".format(_i)])/100.
                 self.items[id_i]["alpha"] = float(self.items[id_i]["alpha"]) + s_i
                 self.items[id_i]["beta"] = float(self.items[id_i]["beta"]) + (1. - s_i)
                 self.items[id_i]["mode"] = self.mode(self.items[id_i]["alpha"], self.items[id_i]["beta"])
